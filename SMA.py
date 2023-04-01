@@ -100,7 +100,6 @@ class Trader:
                     self.long[sym] = True
                 results[sym] = t
                 continue
-            if sym != "PEARLS": continue
             
             if sym in state.position and state.position[sym] == 0: self.long[sym] = False
 
